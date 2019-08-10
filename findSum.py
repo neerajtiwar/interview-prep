@@ -1,20 +1,19 @@
 #Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
 
 #For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17
-
+import itertools
 def findSum(a,k):
-	first = 0
-	last = len(a) - 1
-	foundSum = 0
-
-	while first < last:
-		foundSum = a[first] + a[last]
-		if (foundSum == k):
-			return True
-		else:
-			first += 1
-		return False
-		
+    i = 0 
+    j = 1
+    while i < len(a) - 1:
+        if a[i] + a[j] ==k:
+            return True
+            break
+        else:
+            i += 1
+            j += 1
+    else:
+        return False
 if __name__ == '__main__':
 	print("Enter list of numbers")
 	a = list(map(int,input().rstrip().rsplit()))
