@@ -2,6 +2,10 @@
 #like below lines
 #477123675|ERROR|handler.cpp|127|findHandlers|Division by zero
 #1477997395|ERROR|nw_tx.cpp|1110|getHandlers|Array out of bounds
+#1477997395|ERROR|nw_tx.cpp|1110|getHandlers|Array out of bounds
+#example output:
+#handler.cpp 1
+#nw_tx.cpp 2
 
 
 from collections import Counter
