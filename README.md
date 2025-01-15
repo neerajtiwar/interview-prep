@@ -1,1 +1,1 @@
-This repository contains programmins interview questions and some solutions
+This repository contains programming interview questions and some solutions
